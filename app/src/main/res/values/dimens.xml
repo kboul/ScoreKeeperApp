@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="playerPadding">16dp</dimen>
+    <dimen name="playerTextSize">20dp</dimen>
+    <dimen name="scorePaddingBottom">24dp</dimen>
+    <dimen name="scoreTextSize">56sp</dimen>
+    <dimen name="pointsMarginLeftRight">24dp</dimen>
+    <dimen name="pointsMarginBottom">8dp</dimen>
+    <dimen name="resetMarginBottom">32dp</dimen>
+    <dimen name="lineMarginTop">16dp</dimen>
+</resources>

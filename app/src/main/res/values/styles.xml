@@ -1,0 +1,233 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    
+    <style name="main_relative_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/burning_temple</item>
+    </style>
+
+    <style name="main_linear_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="yosiLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="edyLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="yosiTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/playerPadding</item>
+        <item name="android:text">@string/yosiTitle</item>
+        <item name="android:textSize">@dimen/playerTextSize</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="edyTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/playerPadding</item>
+        <item name="android:text">@string/edyTitle</item>
+        <item name="android:textSize">@dimen/playerTextSize</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="yosiScore">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/scorePaddingBottom</item>
+        <item name="android:text">@string/yosiScore</item>
+        <item name="android:textSize">@dimen/scoreTextSize</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="edyScore">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/scorePaddingBottom</item>
+        <item name="android:text">@string/edyScore</item>
+        <item name="android:textSize">@dimen/scoreTextSize</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="line">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/lineMarginTop</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="yosi1move">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
+        <item name="android:onClick">score</item>
+        <item name="android:text">@string/yosi1move</item>
+        <item name="android:tag">35_yosi</item>
+    </style>
+
+    <style name="edy1move">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
+        <item name="android:onClick">score</item>
+        <item name="android:text">@string/edy1move</item>
+        <item name="android:tag">35_edy</item>
+    </style>
+
+    <style name="yosi2move">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
+        <item name="android:onClick">score</item>
+        <item name="android:text">@string/yosi2move</item>
+        <item name="android:tag">35_yosi</item>
+    </style>
+
+    <style name="edy2move">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
+        <item name="android:onClick">score</item>
+        <item name="android:text">@string/edy2move</item>
+        <item name="android:tag">35_edy</item>
+    </style>
+
+    <style name="yosi3move">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
+        <item name="android:onClick">score</item>
+        <item name="android:text">@string/yosi3move</item>
+        <item name="android:tag">47_yosi</item>
+    </style>
+
+    <style name="edy3move">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
+        <item name="android:onClick">score</item>
+        <item name="android:text">@string/edy3move</item>
+        <item name="android:tag">40_edy</item>
+    </style>
+
+    <style name="yosi4move">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
+        <item name="android:onClick">score</item>
+        <item name="android:text">@string/yosi4move</item>
+        <item name="android:tag">22_edy</item>
+    </style>
+
+    <style name="edy4move">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
+        <item name="android:onClick">score</item>
+        <item name="android:text">@string/edy4move</item>
+        <item name="android:tag">50_edy</item>
+    </style>
+
+    <style name="yosi5move">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
+        <item name="android:onClick">score</item>
+        <item name="android:text">@string/yosi5move</item>
+        <item name="android:tag">40_edy</item>
+    </style>
+
+    <style name="edy5move">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
+        <item name="android:onClick">score</item>
+        <item name="android:text">@string/edy5move</item>
+        <item name="android:tag">42_edy</item>
+    </style>
+
+    <style name="yosi6move">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
+        <item name="android:onClick">score</item>
+        <item name="android:text">@string/yosi6move</item>
+        <item name="android:tag">50_edy</item>
+    </style>
+
+    <style name="edy6move">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
+        <item name="android:onClick">score</item>
+        <item name="android:text">@string/edy6move</item>
+        <item name="android:tag">60_edy</item>
+    </style>
+
+    <style name="reset">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/resetMarginBottom</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:onClick">reset</item>
+        <item name="android:text">@string/reset</item>
+    </style>
+
+</resources>
+
+<!-- http://www.tekkenzaibatsu.com/tekken6/movelist.php?id=yoshimitsu -->
+<!-- http://www.tekkenzaibatsu.com/tekken6/movelist.php?id=eddy -->

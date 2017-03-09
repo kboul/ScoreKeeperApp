@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.scorekeeperapp.MainActivity">
+
+    <RelativeLayout style="@style/main_relative_layout">
+
+        <LinearLayout
+            android:id="@+id/main_linear_layout"
+            style="@style/main_linear_layout">
+
+            <LinearLayout style="@style/yosiLayout">
+
+                <TextView style="@style/yosiTitle" />
+
+                <TextView
+                    android:id="@+id/yosi_score"
+                    style="@style/yosiScore" />
+
+                <Button style="@style/yosi1move"/>
+                <Button style="@style/yosi2move"/>
+                <Button style="@style/yosi3move"/>
+                <Button style="@style/yosi4move"/>
+                <Button style="@style/yosi5move"/>
+                <Button style="@style/yosi6move"/>
+
+            </LinearLayout>
+
+            <View style="@style/line"></View>
+
+            <LinearLayout style="@style/edyLayout">
+
+                <TextView style="@style/edyTitle" />
+
+                <TextView
+                    android:id="@+id/edy_score"
+                    style="@style/edyScore" />
+
+                <Button style="@style/edy1move"/>
+                <Button style="@style/edy2move"/>
+                <Button style="@style/edy3move"/>
+                <Button style="@style/edy4move"/>
+                <Button style="@style/edy5move"/>
+                <Button style="@style/edy6move"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            style="@style/reset"
+            android:layout_below="@id/main_linear_layout"/>
+
+    </RelativeLayout>
+
+</ScrollView>
