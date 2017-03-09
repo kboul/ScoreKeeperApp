@@ -67,23 +67,27 @@ public class MainActivity extends AppCompatActivity {
         if (points.indexOf("yosi") > -1) {
             points = points.substring(0,2);
             message(points);
-            // check whether Yosi's health falls behind 0
             yosiHealth = yosiHealth - Integer.valueOf(points);
-            if (yosiHealth < 0) {
-                yosiHealth = 0;
-            }
-            dispEdyDmg(yosiHealth);
+            checkPlayerHealth(yosiHealth);
         }
         else if (points.indexOf("edy") > -1){
             points = points.substring(0,2);
             message(points);
             edyHealth = edyHealth - Integer.valueOf(points);
-            // check whether Edy's health falls behind 0
-            if (edyHealth < 0) {
-                edyHealth = 0;
-            }
-            dispYosiDmg(edyHealth);
+            checkPlayerHealth(edyHealth);
         }
+    }
+
+    /**
+     * Check whether Yosi's or Edy' health falls behind 0 - Terminate game.
+     */
+    public void checkPlayerHealth(int playerHealth) {
+        if (playerHealth < 0) {
+            yosiHealth = 200;
+            edyHealth = 200;
+        }
+        dispEdyDmg(yosiHealth);
+        dispYosiDmg(edyHealth);
     }
 
     /**
