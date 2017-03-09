@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Saves the score instance state for both teams
+     * Saves the health instance state for both teams
      */
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Restores the score instance state for both teams in case of screen mode change
+     * Restores the health instance state for both teams in case of screen mode change
      */
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState) {
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays the given score for both teams.
+     * Displays the health for each character after a hit.
      */
     public void damage(View view) {
         String points = view.getTag().toString();
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Reset Score for both
+     * Reset Health for both
      */
     public void resetHealth(View view) {
         yosiHealth = 200;
