@@ -4,7 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import static android.R.id.message;
 import static com.example.android.scorekeeperapp.R.drawable.yosi;
 
 public class MainActivity extends AppCompatActivity {
@@ -64,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
         String points = view.getTag().toString();
         if (points.indexOf("yosi") > -1) {
             points = points.substring(0,2);
+            message(points);
             // check whether Yosi's health falls behind 0
             yosiHealth = yosiHealth - Integer.valueOf(points);
             if (yosiHealth < 0) {
@@ -73,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else if (points.indexOf("edy") > -1){
             points = points.substring(0,2);
+            message(points);
             edyHealth = edyHealth - Integer.valueOf(points);
             // check whether Edy's health falls behind 0
             if (edyHealth < 0) {
@@ -80,6 +84,14 @@ public class MainActivity extends AppCompatActivity {
             }
             dispYosiDmg(edyHealth);
         }
+    }
+
+    /**
+     * Display message with number of points damage
+     */
+    public void message(String points) {
+        String message = "- " + points + " damage!";
+        Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
     }
 
     /**
