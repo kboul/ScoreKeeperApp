@@ -56,24 +56,24 @@
         <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 
-    <style name="yosiScore">
+    <style name="yosiHealth">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
-        <item name="android:paddingBottom">@dimen/scorePaddingBottom</item>
-        <item name="android:text">@string/yosiScore</item>
-        <item name="android:textSize">@dimen/scoreTextSize</item>
+        <item name="android:paddingBottom">@dimen/healthPaddingBottom</item>
+        <item name="android:text">@string/yosiHealth</item>
+        <item name="android:textSize">@dimen/healthTextSize</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
-    <style name="edyScore">
+    <style name="edyHealth">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
-        <item name="android:paddingBottom">@dimen/scorePaddingBottom</item>
-        <item name="android:text">@string/edyScore</item>
-        <item name="android:textSize">@dimen/scoreTextSize</item>
+        <item name="android:paddingBottom">@dimen/healthPaddingBottom</item>
+        <item name="android:text">@string/edyHealth</item>
+        <item name="android:textSize">@dimen/healthTextSize</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:fontFamily">sans-serif-light</item>
     </style>
@@ -91,7 +91,7 @@
         <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
-        <item name="android:onClick">score</item>
+        <item name="android:onClick">damage</item>
         <item name="android:text">@string/yosi1move</item>
         <item name="android:tag">35_yosi</item>
     </style>
@@ -102,7 +102,7 @@
         <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
-        <item name="android:onClick">score</item>
+        <item name="android:onClick">damage</item>
         <item name="android:text">@string/edy1move</item>
         <item name="android:tag">35_edy</item>
     </style>
@@ -113,7 +113,7 @@
         <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
-        <item name="android:onClick">score</item>
+        <item name="android:onClick">damage</item>
         <item name="android:text">@string/yosi2move</item>
         <item name="android:tag">35_yosi</item>
     </style>
@@ -124,7 +124,7 @@
         <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
-        <item name="android:onClick">score</item>
+        <item name="android:onClick">damage</item>
         <item name="android:text">@string/edy2move</item>
         <item name="android:tag">35_edy</item>
     </style>
@@ -135,7 +135,7 @@
         <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
-        <item name="android:onClick">score</item>
+        <item name="android:onClick">damage</item>
         <item name="android:text">@string/yosi3move</item>
         <item name="android:tag">47_yosi</item>
     </style>
@@ -146,7 +146,7 @@
         <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
-        <item name="android:onClick">score</item>
+        <item name="android:onClick">damage</item>
         <item name="android:text">@string/edy3move</item>
         <item name="android:tag">40_edy</item>
     </style>
@@ -157,9 +157,9 @@
         <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
-        <item name="android:onClick">score</item>
+        <item name="android:onClick">damage</item>
         <item name="android:text">@string/yosi4move</item>
-        <item name="android:tag">22_edy</item>
+        <item name="android:tag">22_yosi</item>
     </style>
 
     <style name="edy4move">
@@ -168,7 +168,7 @@
         <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
-        <item name="android:onClick">score</item>
+        <item name="android:onClick">damage</item>
         <item name="android:text">@string/edy4move</item>
         <item name="android:tag">50_edy</item>
     </style>
@@ -179,9 +179,9 @@
         <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
-        <item name="android:onClick">score</item>
+        <item name="android:onClick">damage</item>
         <item name="android:text">@string/yosi5move</item>
-        <item name="android:tag">40_edy</item>
+        <item name="android:tag">40_yosi</item>
     </style>
 
     <style name="edy5move">
@@ -190,7 +190,7 @@
         <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
-        <item name="android:onClick">score</item>
+        <item name="android:onClick">damage</item>
         <item name="android:text">@string/edy5move</item>
         <item name="android:tag">42_edy</item>
     </style>
@@ -201,9 +201,9 @@
         <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
-        <item name="android:onClick">score</item>
+        <item name="android:onClick">damage</item>
         <item name="android:text">@string/yosi6move</item>
-        <item name="android:tag">50_edy</item>
+        <item name="android:tag">50_yosi</item>
     </style>
 
     <style name="edy6move">
@@ -212,19 +212,19 @@
         <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
         <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
-        <item name="android:onClick">score</item>
+        <item name="android:onClick">damage</item>
         <item name="android:text">@string/edy6move</item>
         <item name="android:tag">60_edy</item>
     </style>
 
-    <style name="reset">
+    <style name="resetHealth">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">@dimen/resetMarginBottom</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_alignParentBottom">true</item>
-        <item name="android:onClick">reset</item>
-        <item name="android:text">@string/reset</item>
+        <item name="android:onClick">resetHealth</item>
+        <item name="android:text">@string/resetHealth</item>
     </style>
 
 </resources>

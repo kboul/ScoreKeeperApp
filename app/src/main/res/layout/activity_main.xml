@@ -18,8 +18,8 @@
                 <TextView style="@style/yosiTitle" />
 
                 <TextView
-                    android:id="@+id/yosi_score"
-                    style="@style/yosiScore" />
+                    android:id="@+id/yosi_health"
+                    style="@style/yosiHealth" />
 
                 <Button style="@style/yosi1move"/>
                 <Button style="@style/yosi2move"/>
@@ -37,8 +37,8 @@
                 <TextView style="@style/edyTitle" />
 
                 <TextView
-                    android:id="@+id/edy_score"
-                    style="@style/edyScore" />
+                    android:id="@+id/edy_health"
+                    style="@style/edyHealth" />
 
                 <Button style="@style/edy1move"/>
                 <Button style="@style/edy2move"/>
@@ -52,7 +52,7 @@
         </LinearLayout>
 
         <Button
-            style="@style/reset" />
+            style="@style/resetHealth" />
 
     </RelativeLayout>
 

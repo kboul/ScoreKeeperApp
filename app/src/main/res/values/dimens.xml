@@ -2,8 +2,8 @@
 <resources>
     <dimen name="playerPadding">16dp</dimen>
     <dimen name="playerTextSize">20dp</dimen>
-    <dimen name="scorePaddingBottom">24dp</dimen>
-    <dimen name="scoreTextSize">56sp</dimen>
+    <dimen name="healthPaddingBottom">24dp</dimen>
+    <dimen name="healthTextSize">56sp</dimen>
     <dimen name="pointsMarginLeftRight">24dp</dimen>
     <dimen name="pointsMarginBottom">8dp</dimen>
     <dimen name="resetMarginBottom">32dp</dimen>

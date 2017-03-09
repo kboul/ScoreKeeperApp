@@ -2,8 +2,8 @@
     <string name="app_name">CourtCounter</string>
     <string name="yosiTitle">Yosimitsu</string>
     <string name="edyTitle">Edy</string>
-    <string name="yosiScore">200</string>
-    <string name="edyScore">200</string>
+    <string name="yosiHealth">200</string>
+    <string name="edyHealth">200</string>
     <string name="yosi1move">Devious Plot</string>
     <string name="edy1move">Caranguejo</string>
     <string name="yosi2move">Sword Face Smash</string>
@@ -16,5 +16,5 @@
     <string name="yosi6move">Tornado Drop</string>
     <string name="edy5move">Garganta</string>
     <string name="edy6move">Air Mail</string>
-    <string name="reset">Reset</string>
+    <string name="resetHealth">Reset</string>
 </resources>
