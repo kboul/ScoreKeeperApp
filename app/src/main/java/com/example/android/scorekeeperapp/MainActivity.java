@@ -5,10 +5,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import static com.example.android.scorekeeperapp.R.drawable.yosi;
+
 public class MainActivity extends AppCompatActivity {
 
-    int yosiScore = 200;
-    int edyScore = 200;
+    int yosiHealth = 200;
+    int edyHealth = 200;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
         super.onSaveInstanceState(savedInstanceState);
-        savedInstanceState.putInt("yosiScore", yosiScore);
-        savedInstanceState.putInt("edyScore", edyScore);
+        savedInstanceState.putInt("yosiHealth", yosiHealth);
+        savedInstanceState.putInt("edyHealth", edyHealth);
     }
 
     /**
@@ -32,11 +34,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        yosiScore = savedInstanceState.getInt("yosiScore");
-        edyScore = savedInstanceState.getInt("edyScore");
+        yosiHealth = savedInstanceState.getInt("yosiHealth");
+        edyHealth = savedInstanceState.getInt("edyHealth");
 
-        dispEdyDmg(yosiScore);
-        dispYosiDmg(edyScore);
+        dispEdyDmg(yosiHealth);
+        dispYosiDmg(edyHealth);
     }
 
     /**
@@ -62,13 +64,21 @@ public class MainActivity extends AppCompatActivity {
         String points = view.getTag().toString();
         if (points.indexOf("yosi") > -1) {
             points = points.substring(0,2);
-            yosiScore = yosiScore - Integer.valueOf(points);
-            dispEdyDmg(yosiScore);
+            // check whether Yosi's health falls behind 0
+            yosiHealth = yosiHealth - Integer.valueOf(points);
+            if (yosiHealth < 0) {
+                yosiHealth = 0;
+            }
+            dispEdyDmg(yosiHealth);
         }
         else if (points.indexOf("edy") > -1){
             points = points.substring(0,2);
-            edyScore = edyScore - Integer.valueOf(points);
-            dispYosiDmg(edyScore);
+            edyHealth = edyHealth - Integer.valueOf(points);
+            // check whether Edy's health falls behind 0
+            if (edyHealth < 0) {
+                edyHealth = 0;
+            }
+            dispYosiDmg(edyHealth);
         }
     }
 
@@ -76,9 +86,9 @@ public class MainActivity extends AppCompatActivity {
      * Reset Score for both
      */
     public void resetHealth(View view) {
-        yosiScore = 200;
-        edyScore = 200;
-        dispEdyDmg(yosiScore);
-        dispYosiDmg(edyScore);
+        yosiHealth = 200;
+        edyHealth = 200;
+        dispEdyDmg(yosiHealth);
+        dispYosiDmg(edyHealth);
     }
 }
