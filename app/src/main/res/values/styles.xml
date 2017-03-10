@@ -104,7 +104,7 @@
         <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
         <item name="android:onClick">damage</item>
         <item name="android:text">@string/edy1move</item>
-        <item name="android:tag">35_edy</item>
+        <item name="android:tag">60_edy</item>
     </style>
 
     <style name="yosi2move">
@@ -159,7 +159,7 @@
         <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
         <item name="android:onClick">damage</item>
         <item name="android:text">@string/yosi4move</item>
-        <item name="android:tag">22_yosi</item>
+        <item name="android:tag">50_yosi</item>
     </style>
 
     <style name="edy4move">
@@ -193,28 +193,6 @@
         <item name="android:onClick">damage</item>
         <item name="android:text">@string/edy5move</item>
         <item name="android:tag">42_edy</item>
-    </style>
-
-    <style name="yosi6move">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
-        <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
-        <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
-        <item name="android:onClick">damage</item>
-        <item name="android:text">@string/yosi6move</item>
-        <item name="android:tag">50_yosi</item>
-    </style>
-
-    <style name="edy6move">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
-        <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
-        <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
-        <item name="android:onClick">damage</item>
-        <item name="android:text">@string/edy6move</item>
-        <item name="android:tag">60_edy</item>
     </style>
 
     <style name="resetHealth">

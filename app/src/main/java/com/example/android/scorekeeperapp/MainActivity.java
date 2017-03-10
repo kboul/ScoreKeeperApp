@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Saves the health instance state for both teams
+     * Saves the health instance state for both players.
      */
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Restores the health instance state for both teams in case of screen mode change
+     * Restores the health instance state for both players in case of screen mode change.
      */
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState) {
@@ -79,12 +79,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Check whether Yosi's or Edy' health falls behind 0 - Terminate game.
+     * Check whether Yosi's or Edy' health falls behind 0 - Game over.
      */
     public void checkPlayerHealth(int playerHealth) {
         if (playerHealth < 0) {
-            yosiHealth = 200;
-            edyHealth = 200;
+            yosiHealth = edyHealth = 200;
         }
         dispEdyDmg(yosiHealth);
         dispYosiDmg(edyHealth);
@@ -102,8 +101,7 @@ public class MainActivity extends AppCompatActivity {
      * Reset Health for both
      */
     public void resetHealth(View view) {
-        yosiHealth = 200;
-        edyHealth = 200;
+        yosiHealth = edyHealth = 200;
         dispEdyDmg(yosiHealth);
         dispYosiDmg(edyHealth);
     }

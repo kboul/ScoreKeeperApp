@@ -6,6 +6,6 @@
     <dimen name="healthTextSize">56sp</dimen>
     <dimen name="pointsMarginLeftRight">24dp</dimen>
     <dimen name="pointsMarginBottom">8dp</dimen>
-    <dimen name="resetMarginBottom">32dp</dimen>
+    <dimen name="resetMarginBottom">20dp</dimen>
     <dimen name="lineMarginTop">16dp</dimen>
 </resources>

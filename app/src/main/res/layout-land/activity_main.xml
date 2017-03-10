@@ -55,8 +55,6 @@
 
                 <Button style="@style/edy5move" />
 
-                <Button style="@style/edy6move" />
-
             </LinearLayout>
 
         </LinearLayout>
