@@ -3,6 +3,7 @@ package com.example.android.scorekeeperapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
     int yosiHealth = 200;
     int edyHealth = 200;
-    boolean whoPlays = true;
+    int[] edyButtonIDs = new int[]{R.id.edy1move, R.id.edy2move, R.id.edy3move, R.id.edy4move, R.id.edy5move};
+    int[] yosiButtonIDs = new int[]{R.id.yosi1move, R.id.yosi2move, R.id.yosi3move, R.id.yosi4move, R.id.yosi5move};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,8 +73,8 @@ public class MainActivity extends AppCompatActivity {
             message(points);
             yosiHealth = yosiHealth - Integer.valueOf(points);
 
-            setVisibilityForEdy(true);
-            setVisibilityForYosi(false);
+            setVisibility(true, edyButtonIDs);
+            setVisibility(false, yosiButtonIDs);
 
             checkPlayerHealth(yosiHealth);
         } else if (points.indexOf("edy") > -1) {
@@ -80,8 +82,8 @@ public class MainActivity extends AppCompatActivity {
             message(points);
             edyHealth = edyHealth - Integer.valueOf(points);
 
-            setVisibilityForEdy(false);
-            setVisibilityForYosi(true);
+            setVisibility(false, edyButtonIDs);
+            setVisibility(true, yosiButtonIDs);
 
             checkPlayerHealth(edyHealth);
         }
@@ -99,8 +101,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, message + "Edy wins!", Toast.LENGTH_SHORT).show();
             }
             yosiHealth = edyHealth = 200;
-            setVisibilityForEdy(true);
-            setVisibilityForYosi(true);
+            setVisibility(true, edyButtonIDs);
+            setVisibility(true, yosiButtonIDs);
         }
         dispEdyDmg(yosiHealth);
         dispYosiDmg(edyHealth);
@@ -122,23 +124,14 @@ public class MainActivity extends AppCompatActivity {
         yosiHealth = edyHealth = 200;
         dispEdyDmg(yosiHealth);
         dispYosiDmg(edyHealth);
-        setVisibilityForEdy(true);
-        setVisibilityForYosi(true);
+        setVisibility(true, edyButtonIDs);
+        setVisibility(true, yosiButtonIDs);
     }
 
-    private void setVisibilityForEdy(boolean bool) {
-        findViewById(R.id.edy1move).setEnabled(bool);
-        findViewById(R.id.edy2move).setEnabled(bool);
-        findViewById(R.id.edy3move).setEnabled(bool);
-        findViewById(R.id.edy4move).setEnabled(bool);
-        findViewById(R.id.edy5move).setEnabled(bool);
-    }
-
-    private void setVisibilityForYosi(boolean bool) {
-        findViewById(R.id.yosi1move).setEnabled(bool);
-        findViewById(R.id.yosi2move).setEnabled(bool);
-        findViewById(R.id.yosi3move).setEnabled(bool);
-        findViewById(R.id.yosi4move).setEnabled(bool);
-        findViewById(R.id.yosi5move).setEnabled(bool);
+    private void setVisibility(boolean bool, int[] buttonIDs) {
+        for (int i = 0; i < buttonIDs.length; i++) {
+            Button b = (Button) findViewById(buttonIDs[i]);
+            b.setEnabled(bool);
+        }
     }
 }
