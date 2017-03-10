@@ -9,6 +9,11 @@
 
     <RelativeLayout style="@style/main_relative_layout">
 
+        <LinearLayout style="@style/header_layout">
+
+            <TextView style="@style/header"/>
+        </LinearLayout>
+
         <LinearLayout
             android:id="@+id/main_linear_layout"
             style="@style/main_linear_layout">

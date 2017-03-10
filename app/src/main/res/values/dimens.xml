@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="mainLinrLaytMargTop">20dp</dimen>
     <dimen name="playerPadding">16dp</dimen>
     <dimen name="playerTextSize">20dp</dimen>
     <dimen name="healthPaddingBottom">24dp</dimen>
     <dimen name="healthTextSize">56sp</dimen>
     <dimen name="pointsMarginLeftRight">24dp</dimen>
     <dimen name="pointsMarginBottom">8dp</dimen>
-    <dimen name="resetMarginBottom">20dp</dimen>
+    <dimen name="resetMarginBottom">10dp</dimen>
     <dimen name="lineMarginTop">16dp</dimen>
 </resources>
