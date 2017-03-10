@@ -32,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(savedInstanceState);
         savedInstanceState.putInt("yosiHealth", yosiHealth);
         savedInstanceState.putInt("edyHealth", edyHealth);
+
+        for (int i = 0; i < edyButtonIDs.length; i++) {
+            savedInstanceState.putInt(Integer.toString(edyButtonIDs[i]), edyButtonIDs[i]);
+        }
     }
 
     /**
@@ -45,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
 
         dispEdyDmg(yosiHealth);
         dispYosiDmg(edyHealth);
+
+        for (int i = 0; i < edyButtonIDs.length; i++) {
+            savedInstanceState.getInt(Integer.toString(edyButtonIDs[i]), edyButtonIDs[i]);
+        }
     }
 
     /**

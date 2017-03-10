@@ -39,7 +39,8 @@
 
                 <Button
                     android:id="@+id/yosi5move"
-                    style="@style/yosi5move" />
+                    style="@style/yosi5move"
+                    android:backgroundTint="@color/white" />
 
             </LinearLayout>
 

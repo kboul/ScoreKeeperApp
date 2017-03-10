@@ -94,6 +94,7 @@
         <item name="android:onClick">damage</item>
         <item name="android:text">@string/yosi1move</item>
         <item name="android:tag">35_yosi</item>
+        <item name="android:backgroundTint">@color/white</item>
     </style>
 
     <style name="edy1move">
@@ -105,6 +106,7 @@
         <item name="android:onClick">damage</item>
         <item name="android:text">@string/edy1move</item>
         <item name="android:tag">60_edy</item>
+        <item name="android:backgroundTint">@color/white</item>
     </style>
 
     <style name="yosi2move">
@@ -116,6 +118,7 @@
         <item name="android:onClick">damage</item>
         <item name="android:text">@string/yosi2move</item>
         <item name="android:tag">35_yosi</item>
+        <item name="android:backgroundTint">@color/white</item>
     </style>
 
     <style name="edy2move">
@@ -127,6 +130,7 @@
         <item name="android:onClick">damage</item>
         <item name="android:text">@string/edy2move</item>
         <item name="android:tag">35_edy</item>
+        <item name="android:backgroundTint">@color/white</item>
     </style>
 
     <style name="yosi3move">
@@ -138,6 +142,7 @@
         <item name="android:onClick">damage</item>
         <item name="android:text">@string/yosi3move</item>
         <item name="android:tag">47_yosi</item>
+        <item name="android:backgroundTint">@color/white</item>
     </style>
 
     <style name="edy3move">
@@ -149,6 +154,7 @@
         <item name="android:onClick">damage</item>
         <item name="android:text">@string/edy3move</item>
         <item name="android:tag">40_edy</item>
+        <item name="android:backgroundTint">@color/white</item>
     </style>
 
     <style name="yosi4move">
@@ -160,6 +166,7 @@
         <item name="android:onClick">damage</item>
         <item name="android:text">@string/yosi4move</item>
         <item name="android:tag">50_yosi</item>
+        <item name="android:backgroundTint">@color/white</item>
     </style>
 
     <style name="edy4move">
@@ -171,6 +178,7 @@
         <item name="android:onClick">damage</item>
         <item name="android:text">@string/edy4move</item>
         <item name="android:tag">50_edy</item>
+        <item name="android:backgroundTint">@color/white</item>
     </style>
 
     <style name="yosi5move">
@@ -182,6 +190,7 @@
         <item name="android:onClick">damage</item>
         <item name="android:text">@string/yosi5move</item>
         <item name="android:tag">40_yosi</item>
+        <item name="android:backgroundTint">@color/white</item>
     </style>
 
     <style name="edy5move">
@@ -193,6 +202,7 @@
         <item name="android:onClick">damage</item>
         <item name="android:text">@string/edy5move</item>
         <item name="android:tag">42_edy</item>
+        <item name="android:backgroundTint">@color/white</item>
     </style>
 
     <style name="resetHealth">
@@ -203,6 +213,7 @@
         <item name="android:layout_alignParentBottom">true</item>
         <item name="android:onClick">resetHealth</item>
         <item name="android:text">@string/resetHealth</item>
+        <item name="android:backgroundTint">@color/white</item>
     </style>
 
 </resources>
