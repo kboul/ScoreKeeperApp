@@ -31,8 +31,6 @@
 
                 <Button style="@style/yosi5move" />
 
-                <Button style="@style/yosi6move" />
-
             </LinearLayout>
 
             <View style="@style/line"></View>

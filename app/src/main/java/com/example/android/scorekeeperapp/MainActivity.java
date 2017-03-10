@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     int yosiHealth = 200;
     int edyHealth = 200;
+    boolean whoPlays;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,7 +83,14 @@ public class MainActivity extends AppCompatActivity {
      * Check whether Yosi's or Edy' health falls behind 0 - Game over.
      */
     public void checkPlayerHealth(int playerHealth) {
-        if (playerHealth < 0) {
+        String message = "Game Over \n";
+        if (playerHealth <= 0) {
+            if (yosiHealth > edyHealth) {
+                Toast.makeText(MainActivity.this, message + "Yosimitsu wins!", Toast.LENGTH_SHORT).show();
+            }
+            else {
+                Toast.makeText(MainActivity.this, message + "Edy wins!", Toast.LENGTH_SHORT).show();
+            }
             yosiHealth = edyHealth = 200;
         }
         dispEdyDmg(yosiHealth);
@@ -101,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
      * Reset Health for both
      */
     public void resetHealth(View view) {
+        Toast.makeText(MainActivity.this, "Starting new game...", Toast.LENGTH_SHORT).show();
         yosiHealth = edyHealth = 200;
         dispEdyDmg(yosiHealth);
         dispYosiDmg(edyHealth);
