@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CourtCounter</string>
+    <string name="app_name">ScoreKeeper</string>
     <string name="yosiTitle">Yosimitsu</string>
     <string name="edyTitle">Edy</string>
     <string name="yosiHealth">200</string>

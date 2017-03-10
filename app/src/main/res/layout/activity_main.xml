@@ -21,15 +21,25 @@
                     android:id="@+id/yosi_health"
                     style="@style/yosiHealth" />
 
-                <Button style="@style/yosi1move" />
+                <Button
+                    android:id="@+id/yosi1move"
+                    style="@style/yosi1move" />
 
-                <Button style="@style/yosi2move" />
+                <Button
+                    android:id="@+id/yosi2move"
+                    style="@style/yosi2move" />
 
-                <Button style="@style/yosi3move" />
+                <Button
+                    android:id="@+id/yosi3move"
+                    style="@style/yosi3move" />
 
-                <Button style="@style/yosi4move" />
+                <Button
+                    android:id="@+id/yosi4move"
+                    style="@style/yosi4move" />
 
-                <Button style="@style/yosi5move" />
+                <Button
+                    android:id="@+id/yosi5move"
+                    style="@style/yosi5move" />
 
             </LinearLayout>
 
@@ -43,15 +53,24 @@
                     android:id="@+id/edy_health"
                     style="@style/edyHealth" />
 
-                <Button style="@style/edy1move" />
+                <Button
+                    android:id="@+id/edy1move"
+                    style="@style/edy1move" />
 
-                <Button style="@style/edy2move" />
+                <Button android:id="@+id/edy2move"
+                    style="@style/edy2move" />
 
-                <Button style="@style/edy3move" />
+                <Button
+                    android:id="@+id/edy3move"
+                    style="@style/edy3move" />
 
-                <Button style="@style/edy4move" />
+                <Button
+                    android:id="@+id/edy4move"
+                    style="@style/edy4move" />
 
-                <Button style="@style/edy5move" />
+                <Button
+                    android:id="@+id/edy5move"
+                    style="@style/edy5move" />
 
             </LinearLayout>
 

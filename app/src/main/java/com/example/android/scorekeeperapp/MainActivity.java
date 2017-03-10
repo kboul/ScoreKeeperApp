@@ -7,13 +7,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import static android.R.id.message;
+import static android.R.transition.move;
 import static com.example.android.scorekeeperapp.R.drawable.yosi;
 
 public class MainActivity extends AppCompatActivity {
 
     int yosiHealth = 200;
     int edyHealth = 200;
-    boolean whoPlays;
+    boolean whoPlays = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,15 +67,22 @@ public class MainActivity extends AppCompatActivity {
     public void damage(View view) {
         String points = view.getTag().toString();
         if (points.indexOf("yosi") > -1) {
-            points = points.substring(0,2);
+            points = points.substring(0, 2);
             message(points);
             yosiHealth = yosiHealth - Integer.valueOf(points);
+
+            setVisibilityForEdy(true);
+            setVisibilityForYosi(false);
+
             checkPlayerHealth(yosiHealth);
-        }
-        else if (points.indexOf("edy") > -1){
-            points = points.substring(0,2);
+        } else if (points.indexOf("edy") > -1) {
+            points = points.substring(0, 2);
             message(points);
             edyHealth = edyHealth - Integer.valueOf(points);
+
+            setVisibilityForEdy(false);
+            setVisibilityForYosi(true);
+
             checkPlayerHealth(edyHealth);
         }
     }
@@ -87,11 +95,12 @@ public class MainActivity extends AppCompatActivity {
         if (playerHealth <= 0) {
             if (yosiHealth > edyHealth) {
                 Toast.makeText(MainActivity.this, message + "Yosimitsu wins!", Toast.LENGTH_SHORT).show();
-            }
-            else {
+            } else {
                 Toast.makeText(MainActivity.this, message + "Edy wins!", Toast.LENGTH_SHORT).show();
             }
             yosiHealth = edyHealth = 200;
+            setVisibilityForEdy(true);
+            setVisibilityForYosi(true);
         }
         dispEdyDmg(yosiHealth);
         dispYosiDmg(edyHealth);
@@ -113,5 +122,23 @@ public class MainActivity extends AppCompatActivity {
         yosiHealth = edyHealth = 200;
         dispEdyDmg(yosiHealth);
         dispYosiDmg(edyHealth);
+        setVisibilityForEdy(true);
+        setVisibilityForYosi(true);
+    }
+
+    private void setVisibilityForEdy(boolean bool) {
+        findViewById(R.id.edy1move).setEnabled(bool);
+        findViewById(R.id.edy2move).setEnabled(bool);
+        findViewById(R.id.edy3move).setEnabled(bool);
+        findViewById(R.id.edy4move).setEnabled(bool);
+        findViewById(R.id.edy5move).setEnabled(bool);
+    }
+
+    private void setVisibilityForYosi(boolean bool) {
+        findViewById(R.id.yosi1move).setEnabled(bool);
+        findViewById(R.id.yosi2move).setEnabled(bool);
+        findViewById(R.id.yosi3move).setEnabled(bool);
+        findViewById(R.id.yosi4move).setEnabled(bool);
+        findViewById(R.id.yosi5move).setEnabled(bool);
     }
 }
