@@ -1,4 +1,4 @@
-# Court Counter App
+# Score Keeper App
 
 ## Project Overview
 This project is a chance for you to combine and practice everything you learned in this section of the course. You will be making an app that allows a user to keep track of points within a game.
