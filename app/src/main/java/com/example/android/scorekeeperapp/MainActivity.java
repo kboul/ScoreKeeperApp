@@ -33,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
         savedInstanceState.putInt("yosiHealth", yosiHealth);
         savedInstanceState.putInt("edyHealth", edyHealth);
 
-//        for (int i = 0; i < edyButtonIDs.length; i++) {
-//            savedInstanceState.putInt(Integer.toString(edyButtonIDs[i]), edyButtonIDs[i]);
-//        }
+        //for (int i = 0; i < edyButtonIDs.length; i++) {
+        //  savedInstanceState.putInt(Integer.toString(edyButtonIDs[i]), edyButtonIDs[i]);
+        //}
     }
 
     /**
@@ -50,13 +50,15 @@ public class MainActivity extends AppCompatActivity {
         dispEdyDmg(yosiHealth);
         dispYosiDmg(edyHealth);
 
-//        for (int i = 0; i < edyButtonIDs.length; i++) {
-//            savedInstanceState.getInt(Integer.toString(edyButtonIDs[i]), edyButtonIDs[i]);
-//        }
+        //for (int i = 0; i < edyButtonIDs.length; i++) {
+        //   savedInstanceState.getInt(Integer.toString(edyButtonIDs[i]), edyButtonIDs[i]);
+        //}
     }
 
     /**
      * Displays Edy's health after the damage by Yosi's hit.
+     *
+     * @param score is the current value score of Edy
      */
     public void dispEdyDmg(int score) {
         TextView scoreView = (TextView) findViewById(R.id.edy_health);
@@ -65,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Displays Yosi's health after the damage by Edy's hit.
+     *
+     * @param score is the current value score of Yosi
      */
     public void dispYosiDmg(int score) {
         TextView scoreView = (TextView) findViewById(R.id.yosi_health);
@@ -99,6 +103,8 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Check whether Yosi's or Edy' health falls behind 0 - Game over.
+     *
+     * @param playerHealth is the player's health value
      */
     public void checkPlayerHealth(int playerHealth) {
         String message = "Game Over \n";
@@ -118,6 +124,8 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Display message with number of points damage
+     *
+     * @param points is the hit move damage points
      */
     public void message(String points) {
         String message = "- " + points + " damage!";
@@ -136,6 +144,12 @@ public class MainActivity extends AppCompatActivity {
         setVisibility(true, yosiButtonIDs);
     }
 
+    /**
+     * Determine visibility for both players' buttons
+     *
+     * @param bool is the boolean value determining whether a set of player's buttons will be visible or not
+     * @param buttonIDs is the array which stores the specified payers' button ids
+     */
     private void setVisibility(boolean bool, int[] buttonIDs) {
         for (int i = 0; i < buttonIDs.length; i++) {
             Button b = (Button) findViewById(buttonIDs[i]);
